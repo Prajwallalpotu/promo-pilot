@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: quick-mode-no-stops
+expected_outcome: |
+  In quick mode the skill does not stop for questions or a storyboard approval; it builds and verifies v1 and only then asks whether the user is happy.

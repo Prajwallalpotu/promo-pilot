@@ -1,0 +1,10 @@
+{
+  "name": "promo-pilot",
+  "version": "3.0.1",
+  "description": "Professional short promo videos from a URL, a project or a text description: voiceover in your language, synced captions, min/mid/max quality, guided/quick/auto modes, and revisions until you're happy. Built on brag, HyperFrames and media-use.",
+  "author": { "name": "Prajwal Lalpotu" },
+  "homepage": "https://github.com/Prajwallalpotu/promo-pilot",
+  "repository": "https://github.com/Prajwallalpotu/promo-pilot",
+  "license": "MIT",
+  "keywords": ["video", "promo", "launch-video", "reels", "voiceover", "captions", "brag", "hyperframes"]
+}

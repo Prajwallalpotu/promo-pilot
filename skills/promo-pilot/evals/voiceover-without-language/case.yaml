@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: voiceover-without-language
+expected_outcome: |
+  The skill announces the tier, notices that no voiceover language was given and asks for it instead of assuming English, and asks the remaining missing intake questions in one round.

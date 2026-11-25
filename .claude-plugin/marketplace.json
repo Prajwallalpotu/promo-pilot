@@ -1,0 +1,11 @@
+{
+  "name": "promo-pilot",
+  "owner": { "name": "Prajwal Lalpotu" },
+  "plugins": [
+    {
+      "name": "promo-pilot",
+      "source": "./",
+      "description": "Professional short promo videos with voiceover, captions, quality tiers and a review loop. Built on brag and HyperFrames."
+    }
+  ]
+}

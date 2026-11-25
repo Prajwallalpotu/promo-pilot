@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: url-uses-real-site-assets
+expected_outcome: |
+  The skill captures the website with hyperframes capture, builds a source kit of the site's real images, logo, fonts, colours and copy, and builds the video from those real assets. It draws no products or logos with CSS shapes, uses the brand's own lines instead of invented taglines, asks once about permission (or labels it as a spec ad), and runs the director's review before rendering.

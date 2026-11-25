@@ -1,0 +1,7 @@
+promo-output*/
+brag-output*/
+evals/results/
+skills/promo-pilot/evals/results/
+__pycache__/
+.DS_Store
+dist/

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: url-permission-and-no-default-voice
+expected_outcome: |
+  The skill asks once whether the user owns the site or has permission to use its brand, does not switch voiceover on by itself, and keeps the user's choices (15s, landscape, cinematic).

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: text-input-hindi-voiceover
+expected_outcome: |
+  The skill runs the setup check first, treats the text as the source, writes a brief, and shows one storyboard with a settings line (vertical, about 20s, Hindi voice, Hindi captions, voice provider chosen automatically). If the voice tools are missing it asks one install question before any creative work. It invents no facts beyond what the user gave.
