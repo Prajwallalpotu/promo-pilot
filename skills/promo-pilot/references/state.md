@@ -15,7 +15,7 @@ Keep a small state file in the output folder and update it after every step. It 
   "format": "vertical",
   "duration_s": 20,
   "tone": "polished",
-  "voice": { "enabled": true, "language": "hi", "provider": "heygen | kokoro | elevenlabs | gemini", "voice_id": "...", "style": "calm female" },
+  "voice": { "enabled": true, "language": "hi", "provider": "heygen | kokoro | elevenlabs", "voice_id": "...", "style": "calm female" },
   "captions": { "enabled": true, "mode": "voice | subtitles", "language": "hi", "style": "..." },
   "tier": "mid",
   "tier_history": [{ "tier": "mid", "reason": "default for Sonnet", "at": "..." }],

@@ -9,7 +9,7 @@ promo-pilot directs the `brag` video skills to make a short promo video the user
 
 **The one thing that decides quality:** real material on screen. The brand's own photos, logo, fonts, copy and UI, or real photography. A video made of CSS-drawn bottles, phones or people looks like clip-art however well it moves. promo-pilot never draws real-world objects; it finds them, captures them, or designs around them with type.
 
-**What the user should feel:** a few seconds of setup, at most one short question, a storyboard to approve, then a finished, polished video. Never a stream of questions, and never a surprise install halfway through. Everything in this file serves that.
+**What the user should feel:** a few seconds of setup, at most one short message of questions (usually none), a storyboard to approve, then a finished, polished video. Never a stream of questions, and never a surprise install halfway through. Everything in this file serves that.
 
 `<skill-dir>` means the folder holding this file. `<hf>` means the HyperFrames command chosen in step 0.
 
@@ -44,7 +44,7 @@ python3 <skill-dir>/scripts/doctor.py --json [--voice]
   ```
   It ends with `SETUP DONE` or `SETUP INCOMPLETE`. If it's incomplete, tell the user exactly what failed and what to do (the output says), and stop if `can_make_video` is still false. Items under `manual` (for example ffmpeg on Linux) need the user's admin rights: give them the command and wait. Never ask about installs anywhere later in the run.
 - **Skills installed during this session:** if the Skill tool can't find `brag-slim`, `brag`, `hyperframes` or `media-use` yet, read their instructions directly from `~/.claude/skills/<name>/SKILL.md` and follow them the same way.
-- **HyperFrames command:** run doctor once more after setup and use `hyperframes_cli.command` as `<hf>` for every HyperFrames command in this run, including the ones the brag, hyperframes and media-use skills tell you to run. If it says npx failed, follow [references/setup.md](references/setup.md) → *Pinning a version*.
+- **HyperFrames command:** if setup ran, run doctor once more (otherwise the first report is current) and use `hyperframes_cli.command` as `<hf>` for every HyperFrames command in this run, including the ones the brag, hyperframes and media-use skills tell you to run. If it says npx failed, follow [references/setup.md](references/setup.md) → *Pinning a version*.
 - **Text-only input and no HeyGen sign-in:** add one line to the same setup message (or the storyboard, if nothing else is asked): "For real photos in your video, a free HeyGen sign-in gives 75k+ stock images and music: type `! <hf> auth login`. Or drop in your own photos." This is an offer, not a blocker.
 - **No voiceover wanted:** don't mention voice tools at all.
 - **The voice provider is chosen automatically:** HeyGen if signed in, otherwise local Kokoro, otherwise ElevenLabs if a key is set (`default_voice_provider`). Mention it in the storyboard's settings line. Don't ask, unless the user brings it up.
@@ -55,7 +55,7 @@ Then pick the **tier** from the model ([references/tiers.md](references/tiers.md
 
 Read [references/intake.md](references/intake.md). Fill everything you can from the user's words and the source. Use **smart defaults** for the rest: format, length, tone, captions and colours are defaults the user can change at the storyboard, not questions.
 
-Ask only what can't be defaulted (the two items above, plus website permission for a URL that may not be theirs), **in one message, at most 3 short questions**. Usually there's nothing to ask.
+Ask only what can't be defaulted (the two items above, plus website permission for a URL that may not be theirs), **in one message, at most 3 short questions**. Usually there's nothing to ask. When you do ask, end that message with one line naming the tier and the main defaults ("Using mid tier · vertical · ~20s · captions on, change anything in your reply"), so the user can adjust them in the same answer instead of waiting for the storyboard.
 
 ## 2. Build the source kit (the most important step)
 
