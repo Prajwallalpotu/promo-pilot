@@ -8,15 +8,9 @@
 
 ## See what it makes
 
-<p align="center">
-  <a href="docs/media/promo-pilot-demo.mp4">
-    <img src="docs/media/promo-pilot-demo.jpg" alt="promo-pilot demo video: the /promo-pilot command typed in Claude Code, with the caption 'A finished promo video.' Click to play." width="300">
-  </a>
-  <br>
-  <sub><b>▶ Click to play</b> · 25s vertical · English voiceover · synced captions</sub>
-</p>
+https://github.com/user-attachments/assets/778814f7-eb80-46fe-8c18-1725bd5f346f
 
-This video was made by running `/promo-pilot` on this repo. Everything on screen is real: the README, this run's own storyboard, the voice's word timings and the `check_video.py` output of this exact render.
+I made this video by running `/promo-pilot` on this repo. Everything on screen is real: the README, this run's own storyboard, the voice's word timings and the `check_video.py` output of this exact render.
 
 <sub>Music: "Happy Beats: Business Moves Vol. 9" by Sascha Ende, <a href="https://ende.app">ende.app</a> (CC BY 4.0). Sound effects from Pixabay.</sub>
 
